@@ -1,0 +1,47 @@
+.contener{
+   margin: 0 auto;
+   max-width: 1320px;
+}
+body{
+font-family: Bold;
+}
+@media ( max-width:1320px){
+   .contener{
+   max-width: 1295px;
+   padding: 0 25px;
+   }
+   .greed {
+      max-width: 896px;
+      margin: 0 auto;
+      padding: 48px 0;
+   }
+}  
+@media ( max-width:1010px){
+   .block2-wrapper__image {
+      display: none;
+   }
+   .block2__box {
+   padding: 56px 0 60px;
+   }
+   .contener{
+      /* max-width: 696px; */
+      max-width: 1251px;
+      padding: 0 69px;
+      }
+}
+@media ( max-width:834px){
+   .contener{
+      max-width: 1295px;
+      padding: 0 25px;
+      }
+}
+@media ( max-width:510px){
+.yahoocom {
+display: none;
+}
+}
+@media ( max-width:390px){
+   .greed {
+      margin: 24px 0 30px;
+   }
+   }

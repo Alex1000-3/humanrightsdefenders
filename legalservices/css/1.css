@@ -1,0 +1,225 @@
+body._lock{
+   overflow: hidden;
+}
+.header__furst {
+   height: 52px;
+   background: #010101;
+   font-family: 'SemiBold';
+}
+.header__furst-flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 52px;
+   min-height: 18px;
+}
+.contactinformation {
+font-weight: 600;
+font-size: 14px;
+color: #fff;
+display: flex;
+}
+.telefon {
+display: flex;
+align-items: center;
+}
+.yahoocom {
+   margin-left: 26.02px;
+   display: flex;
+align-items: center;
+}
+.telefon::before {
+   content: url('../img/mini/Vector\ \(2\).svg');
+   margin-right: 12px;
+}
+.yahoocom::before {
+   content: url('../img/mini/Vector\ \(3\).svg');
+   display: flex;
+   align-items: center;
+   margin-right: 10px;
+}
+.ordercall {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 150%;
+   color: #4f8ff0;
+}
+.header__container {
+   position: absolute;
+   top: 52px;
+   left: 0;
+   z-index: 100;
+   height: 112px;
+   width: 100%;
+   min-height: 84px;
+   background: rgba(1, 1, 1, 0.76);
+}
+.header__container.-fixed{
+   position: fixed;
+   top: 0;
+}
+.header__menu {
+}
+.menu {
+}
+.contener {
+}
+.header__menu-flex {
+   height: 112px;
+   min-height: 84px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header__titlelogo {
+font-family: 'Black';
+   width: 312px;
+   font-weight: 900;
+font-size: 20px;
+text-transform: lowercase;
+color: #fff;
+}
+.header__titlelogo span{
+   display: block;
+   font-weight: 900;
+font-size: 28px;
+text-transform: uppercase;
+color: #4f8ff0;
+}
+.menu__icon {
+   display: none;
+}
+.menu__body {
+
+}
+.menu__list {
+   display: flex;
+
+}
+.menu__link {
+   font-weight: 500;
+font-size: 18px;
+text-align: center;
+color: #fff;
+margin-left: 46px;
+}
+.menu__link:hover {  
+   color: #4f8ff0;
+   text-decoration: underline;
+   text-underline-offset: 2px;
+   transition: 0.3s;
+}
+@media ( max-width:1010px){
+   .menu__icon{
+   z-index: 10;
+   display: block;
+   position: relative;
+   width: 24px;
+   height: 24px;
+   cursor: pointer;
+   }
+   .menu__icon span,
+   .menu__icon::before,
+   .menu__icon::after{
+      right: 0;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: #fff;
+      
+   }
+   .menu__icon::before,
+   .menu__icon::after{
+      content: '';
+   }
+   .menu__icon::before{
+   top: 0;
+   }
+   .menu__icon::after{
+   bottom: 0;
+   }
+   .menu__icon span{
+   width: 67%;
+   top: 50%;
+   transform: scale(1) translate(0px, -50%);
+   }
+   
+   .menu__icon._active span{
+   transform: scale(0) translate(0px, -50%);
+      }
+      .menu__icon._active::before{
+   height: 2.12px;
+   top: 50%;
+   transform: rotate(-45deg) translate(0px, -50%);
+   }
+   .menu__icon._active::after{
+   height: 2.12px;
+   bottom: 50%;
+   transform: rotate(45deg) translate(0px, 50%);
+   }
+   .menu__body._active{
+   left: 0;
+   }
+   .menu__body::before{
+   content: '';
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   height: 0px;
+   z-index: 5;
+   }
+   .menu__body{
+   position: fixed;
+   top: 0;
+   right: -100%;
+   width: 100%;
+   height: 100%;
+   /* transform: translate(-100%, 0px); */
+   background: #222222;
+   /* padding: 20px 0 10px 0; */
+   transition: right 0.3s ease 0s;
+   overflow-y: auto;
+   }
+   .menu__link {
+   line-height: 44px;
+   }
+   .menu__list {
+   position: absolute;
+   padding: 50px 0 0 0;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   }
+   .header__titlelogo{
+font-weight: 900;
+font-size: 16px;
+line-height: 150%;
+text-transform: lowercase;
+   }
+   .header__titlelogo._active {
+   /* transform: translate(100, 3000); */
+   overflow: hidden;
+   opacity: 0;
+   transition: 0.9s;
+   }
+.header__container._active {
+   top: -30px;
+   left: 9px;
+   transition: 0.2s; 
+}
+}
+.block1 {
+   width: 100%;
+   height: 700px;
+}
+@media ( max-width:834px){
+
+}
+@media ( max-width:510px){
+.yahoocom {
+display: none;
+}
+}
+
