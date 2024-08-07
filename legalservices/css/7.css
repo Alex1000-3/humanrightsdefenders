@@ -1,0 +1,130 @@
+.block5 {
+}
+.block5__box {
+   padding: 80px 0;
+}
+.box__titel {
+}
+.titel__underline {
+}
+.block5-wrapper__comments {
+   display: flex;
+   justify-content: space-between;
+
+   padding: 48px 0 87px;
+}
+.block5-wrapper__comments-inner {
+   position: relative;
+   max-width: 424px;
+
+}
+.block5-inner__img {
+}
+.block5-inner__img img{
+
+   width: 100%;
+   object-fit: cover;
+}
+.img__blue {
+   padding: 20px;
+   z-index: 1;
+overflow: hidden;
+opacity: 0;
+   max-width: 424px;
+height: 270px;
+   position: relative;
+   transition: 0.3s;
+}
+.img__blue:hover{
+   overflow: visible;
+   opacity: 1;
+   background: rgba(79, 143, 240, 0.4);
+   transition: 0.3s;
+}
+.block5-wrapper__comments-inner:hover .block5-text__titel h3{
+   color: #4f8ff0;
+}
+.img__pic {
+position: absolute;
+z-index: 0;
+height: 270px;
+}
+.block5-info__ingo {
+   max-width: 372px;
+   height: 230px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.block5-ingo__eye {
+   /* position: absolute; */
+   width: 41px;
+height: 40px;
+background-color: #fff;
+}
+.block5-ingo__eye img{
+
+}
+.block5-ingo__triangle {
+   --s: 35px; /* the size on the corner */
+   --t: 1px;  /* the thickness of the border */
+   --g: 1px; /* the gap between the border and image */
+   padding: calc(var(--g) + var(--t));
+   outline: var(--t) solid #ffffff; /* the color here */
+   outline-offset: calc(-1*var(--t));
+   mask:
+   conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+   0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+   linear-gradient(#000 0 0) content-box;
+   width:100%; 
+   height: 100%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+.block5-info__text {
+
+   padding: 24px 0  0 0;
+}
+
+.block5-text__titel{
+   width: 424px;
+min-height: 47px;
+}
+.block5-text__titel h3{
+   font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+}
+.block5-text__date{
+   padding: 16px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.block5-text__date p{
+   font-weight: 300;
+font-size: 12px;
+line-height: 120%;
+}
+.block5-text__date div{
+   border: 1px solid #f8f5f4;
+width: 314px;
+height: 0px;
+}
+.block5-info__text p{
+   font-weight: 400;
+font-size: 14px;
+line-height: 120%;
+}
+.blue5__btn {
+   background: #4f8ff0;
+   border: 2px solid #4f8ff0;
+   color: #fff;
+}
+.blue5__btn:hover {
+   border: 2px solid #4f8ff0;
+   background: #fff;
+   color: #4f8ff0;
+}
