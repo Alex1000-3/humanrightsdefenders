@@ -4,6 +4,7 @@
 }
 body{
 font-family: Bold;
+color: #222;
 }
 @media ( max-width:1320px){
    .contener{
@@ -45,3 +46,24 @@ display: none;
       margin: 24px 0 30px;
    }
    }
+._anim-show{
+   transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all 0.5s ease 0s;
+}
+._anim-show._active,
+._active ._anim-show{
+   transform: translate(0px, 0px);
+   opacity: 1;
+}
+
+._anim-left{
+   transform: translate( -20%, 0px);
+   opacity: 0;
+   transition: all 0.8s ease 0s;
+}
+._anim-left._active,
+._active ._anim-left{
+   transform: translate(0px, 0px);
+   opacity: 1;
+}
